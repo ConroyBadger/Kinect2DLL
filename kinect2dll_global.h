@@ -1,0 +1,12 @@
+#ifndef KINECT2DLL_GLOBAL_H
+#define KINECT2DLL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(KINECT2DLL_LIBRARY)
+#  define KINECT2DLLSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define KINECT2DLLSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // KINECT2DLL_GLOBAL_H
